@@ -72,3 +72,53 @@ npx expo start
 ```
 ---
 
+## 🎯 Objetivo
+
+Este projeto foi desenvolvido para:
+
+📚 Praticar React Native
+
+🧩 Aprender componentização
+
+🔄 Trabalhar com navegação
+
+🎨 Melhorar organização de código
+
+---
+
+## 🧠 Aprendizados
+
+- Durante o desenvolvimento:
+
+- Uso de useState e useEffect
+
+- Criação de componentes reutilizáveis
+
+- Estruturação de projeto
+
+- Navegação entre telas
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas!
+
+```bash
+# Faça um fork
+# Crie uma branch
+git checkout -b feature/minha-feature
+
+# Commit
+git commit -m "feat: minha nova feature"
+
+# Push
+git push origin minha-feature
+```
+
+📄 Licença
+
+📌 Projeto com fins educacionais.
+
+👨‍💻 Autor
+<p align="center"> <b>Victor Boehm</b><br> 🚀 Desenvolvedor em formação </p> ```
