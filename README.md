@@ -116,9 +116,11 @@ git commit -m "feat: minha nova feature"
 git push origin minha-feature
 ```
 
-📄 Licença
+## 📄 Licença
 
 📌 Projeto com fins educacionais.
 
-👨‍💻 Autor
+---
+
+## 👨‍💻 Autor
 <p align="center"> <b>Victor Boehm</b><br> 🚀 Desenvolvedor em formação </p> 
