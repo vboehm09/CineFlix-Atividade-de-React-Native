@@ -53,5 +53,22 @@ CineFlix/
 ├── App.js
 └── package.json
 ```
+
+---
+
+## 🚀 Como rodar o projeto
+```bash
+# Clone o repositório
+git clone https://github.com/vboehm09/CineFlix-Atividade-de-React-Native.git
+
+# Entre na pasta
+cd CineFlix-Atividade-de-React-Native
+
+# Instale as dependências
+npm install
+
+# Execute o projeto
+npx expo start
+```
 ---
 
