@@ -40,19 +40,6 @@ Este projeto foi criado com foco educacional, explorando conceitos fundamentais 
 
 ---
 
-## 🚀 Como rodar o projeto
-# Clone o repositório
-git clone https://github.com/vboehm09/CineFlix-Atividade-de-React-Native.git
-
-# Entre na pasta
-cd CineFlix-Atividade-de-React-Native
-
-# Instale as dependências
-npm install
-
-# Execute o projeto
-npx expo start
-
 ## 📂 Estrutura do projeto
 
 ```bash
@@ -65,6 +52,6 @@ CineFlix/
 │   └── services/
 ├── App.js
 └── package.json
-
+```
 ---
 
