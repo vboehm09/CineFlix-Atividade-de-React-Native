@@ -55,7 +55,7 @@ npx expo start
 
 ## 📂 Estrutura do projeto
 
-``bash
+```bash
 CineFlix/
 ├── assets/
 ├── src/
@@ -68,30 +68,3 @@ CineFlix/
 
 ---
 
-
-
-## 🚀 Como rodar o projeto
-# Clone o repositório
-git clone https://github.com/vboehm09/CineFlix-Atividade-de-React-Native.git
-
-# Entre na pasta
-cd CineFlix-Atividade-de-React-Native
-
-# Instale as dependências
-npm install
-
-# Execute o projeto
-npx expo start
-
-## 🚀 Como rodar o projeto
-# Clone o repositório
-git clone https://github.com/vboehm09/CineFlix-Atividade-de-React-Native.git
-
-# Entre na pasta
-cd CineFlix-Atividade-de-React-Native
-
-# Instale as dependências
-npm install
-
-# Execute o projeto
-npx expo start
