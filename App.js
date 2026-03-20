@@ -1,37 +1,36 @@
-import React from 'react';
-import { StyleSheet, View, FlatList, SafeAreaView, Text, StatusBar } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { StatusBar } from 'react-native';
 
-import { DADOS_FILMES } from './src/data/filmes';
-import CardFilme from './src/components/CardFilme';
+import HomeScreen from './src/screens/HomeScreen';
+import MinhaListaScreen from './src/screens/MinhaListaScreen';
+
+const Tab = createBottomTabNavigator();
 
 export default function App() {
-    const PerfilTopo = () => (
-        <View style={styles.perfilContainer}>
-            <View style={styles.topoPreto}></View>
-
-            <View style={styles.infoUsuario}>
-                <View style={styles.avatarCirculo}>
-                    <Text style={styles.iconeAvatar}>👤</Text>
-                </View>
-
-                <Text style={styles.nomeUsuario}>Minha Lista</Text>
-            </View>
-        </View>
-    );
-
     return (
-        <SafeAreaView style={styles.container}>
-            <StatusBar barStyle='light-content' backgroundColor='transparent' translucent />
+        <NavigationContainer>
+            <StatusBar barStyle='light-content' backgroundColor='#121212' />
 
-            <FlatList
-                data={DADOS_FILMES}
-                keyExtractor={(item) => item.id.toString()}
-                ListHeaderComponent={PerfilTopo}
-                renderItem={({ item }) => <CardFilme filme={item} />}
-                numColumns={3}
-                contentContainerStyle={styles.listaConteudo}
-            />
-        </SafeAreaView>
+            <Tab.Navigator
+                screenOptions={{
+                    headerShown: false, 
+                    tabBarStyle: { backgroundColor: '#1F1F1F', borderTopColor: '#333', height: 60 },
+                    tabBarActiveTintColor: '#FFD700',
+                    tabBarInactiveTintColor: '#888',
+                }}>
+                <Tab.Screen
+                    name='Home'
+                    component={HomeScreen}
+                    options={{ tabBarLabel: 'Início' }}
+                />
+                <Tab.Screen
+                    name='MinhaLista'
+                    component={MinhaListaScreen}
+                    options={{ tabBarLabel: 'Minha Lista' }}
+                />
+            </Tab.Navigator>
+        </NavigationContainer>
     );
 }
 
