@@ -92,5 +92,26 @@ export const DADOS_FILMES = [
         ano: 1996,
         capa: 'https://thumb.mais.uol.com.br/collectionThumb/13585-80.jpg?v=16226327',
         sinopse: 'Um jogador de hóquei desajeitado descobre que tem um talento para o golfe e decide competir para salvar a casa de sua avó.',
-    }
+    },
+    {
+        id: '13',
+        titulo: 'Ele Não Está Tão Afim de Você',
+        ano: 2009,
+        capa: 'https://m.media-amazon.com/images/S/pv-target-images/43f61b96afa519d8ef9e3d427e7e9cb2299609d42d455d640b9b7c1454bceedb.jpg',
+        sinopse: 'Uma jovem ansiosa por encontrar o amor analisa obsessivamente cada encontro desastroso, até que um dono de bar cínico decide lhe ensinar a dura verdade: se um homem não liga, é porque ele simplesmente não está interessado. Enquanto ela tenta aprender as "regras", vários casais de amigos enfrentam traições, impasses sobre casamento e as frustrações da vida de solteiro.'
+    },
+    {
+        id: '14',
+        titulo: 'Frozen',
+        ano: 2014,
+        capa: 'https://papodecinema.com.br/wp-content/uploads/2013/09/frozen-cartaz-nacional-papo-de-cinema.webp',
+        sinopse: 'Uma princesa com poderes de gelo acidentalmente amaldiçoa seu reino com um inverno eterno e foge para as montanhas. Sua irmã otimista parte em uma jornada perigosa, ao lado de um vendedor de gelo e um boneco de neve, para convencê-la a voltar e quebrar o feitiço com um ato de amor verdadeiro.'
+    },
+    {
+        id: '15',
+        titulo: 'A Lagoa Azul',
+        ano: 1980,
+        capa: 'https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/95/91/20122128.jpg',
+        sinopse: 'Dois primos sobrevivem a um naufrágio e ficam isolados em uma ilha deserta no Pacífico. Sem a supervisão de adultos, eles crescem e precisam aprender a sobreviver sozinhos, enquanto descobrem as transformações de seus corpos e o despertar de um amor inocente em meio à natureza selvagem.'
+    }       
 ];
