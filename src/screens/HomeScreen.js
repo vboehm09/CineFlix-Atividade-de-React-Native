@@ -1,13 +1,12 @@
-import React from 'react';
 import { StyleSheet, View, Text, FlatList, SafeAreaView, ImageBackground } from 'react-native';
 import { DADOS_FILMES } from '../data/filmes';
 import CardFilme from '../components/CardFilme';
+import HeaderApp from '../components/HeaderApp';
 
 export default function HomeScreen() {
-
     const HeaderHome = () => (
         <View style={styles.headerContainer}>
-            <Text style={styles.saudacao}>Olá, Usuário! 👋</Text>
+            <Text style={styles.saudacao}>Olá Usuário!</Text>
             <Text style={styles.subtitulo}>O que vamos assistir hoje?</Text>
 
             <View style={styles.secaoTitulo}>
@@ -18,11 +17,12 @@ export default function HomeScreen() {
 
     return (
         <SafeAreaView style={styles.container}>
+            <HeaderApp />
             <FlatList
                 data={DADOS_FILMES}
                 keyExtractor={(item) => item.id.toString()}
                 renderItem={({ item }) => <CardFilme filme={item} />}
-                numColumns={2}
+                numColumns={3}
                 ListHeaderComponent={HeaderHome}
                 contentContainerStyle={styles.lista}
             />
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     },
     secaoTitulo: {
         borderLeftWidth: 4,
-        borderLeftColor: '#E50914', // Vermelho estilo Netflix
+        borderLeftColor: '#E50914',
         paddingLeft: 10,
         marginBottom: 15,
     },

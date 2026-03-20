@@ -71,4 +71,26 @@ export const DADOS_FILMES = [
         sinopse:
             'Mario e Luigi, dois irmãos encanadores, são transportados para um mundo paralelo onde precisam resgatar a Princesa Peach do vilão Bowser.',
     },
+    {
+        id: '10',
+        titulo: 'Creed',
+        ano: 2015,
+        capa: 'https://m.media-amazon.com/images/S/pv-target-images/fe3d159e7816b4f31c5da46a32e0c54b7112570a3e6f2d3b176202bdbeffcd02.jpg',
+        sinopse:
+            'Adonis Johnson, filho do famoso boxeador Apollo Creed, busca seguir os passos do pai e se torna um pugilista de sucesso, treinado por Rocky Balboa.',
+    },
+    {
+        id: '11',
+        titulo: 'Homem de Ferro',
+        ano: 2008,
+        capa: 'https://br.web.img3.acsta.net/medias/nmedia/18/91/79/19/20163665.jpg',
+        sinopse: 'Tony Stark, um bilionário e gênio da tecnologia, é sequestrado por terroristas e constrói uma armadura para escapar, tornando-se o super-herói Homem de Ferro.',
+    },
+    {
+        id: '12',
+        titulo: 'Happy Gilmore',
+        ano: 1996,
+        capa: 'https://thumb.mais.uol.com.br/collectionThumb/13585-80.jpg?v=16226327',
+        sinopse: 'Um jogador de hóquei desajeitado descobre que tem um talento para o golfe e decide competir para salvar a casa de sua avó.',
+    }
 ];

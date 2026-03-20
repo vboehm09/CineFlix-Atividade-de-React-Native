@@ -1,6 +1,8 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { StatusBar } from 'react-native';
+import { FavoritosProvider } from './src/context/FavoritosContext';
+import { StatusBar, StyleSheet } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 
 import HomeScreen from './src/screens/HomeScreen';
 import MinhaListaScreen from './src/screens/MinhaListaScreen';
@@ -9,28 +11,36 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
     return (
-        <NavigationContainer>
-            <StatusBar barStyle='light-content' backgroundColor='#121212' />
+        <FavoritosProvider>
+            <NavigationContainer>
+                <StatusBar barStyle='light-content' backgroundColor='#121212' />
 
-            <Tab.Navigator
-                screenOptions={{
-                    headerShown: false, 
-                    tabBarStyle: { backgroundColor: '#1F1F1F', borderTopColor: '#333', height: 60 },
-                    tabBarActiveTintColor: '#FFD700',
-                    tabBarInactiveTintColor: '#888',
-                }}>
-                <Tab.Screen
-                    name='Home'
-                    component={HomeScreen}
-                    options={{ tabBarLabel: 'Início' }}
-                />
-                <Tab.Screen
-                    name='MinhaLista'
-                    component={MinhaListaScreen}
-                    options={{ tabBarLabel: 'Minha Lista' }}
-                />
-            </Tab.Navigator>
-        </NavigationContainer>
+                <Tab.Navigator
+                    screenOptions={({ route }) => ({
+                        headerShown: false,
+                        tabBarIcon: ({ color, size }) => {
+                            let iconName = 'home';
+                            if (route.name === 'Home') {
+                                iconName = 'home';
+                            } else if (route.name === 'MinhaLista') {
+                                iconName = 'list';
+                            }
+                            return <Ionicons name={iconName} size={size} color={color} />;
+                        },
+                    })}>
+                    <Tab.Screen
+                        name='Home'
+                        component={HomeScreen}
+                        options={{ tabBarLabel: 'Início' }}
+                    />
+                    <Tab.Screen
+                        name='MinhaLista'
+                        component={MinhaListaScreen}
+                        options={{ tabBarLabel: 'Minha Lista' }}
+                    />
+                </Tab.Navigator>
+            </NavigationContainer>
+        </FavoritosProvider>
     );
 }
 
