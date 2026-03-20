@@ -121,4 +121,4 @@ git push origin minha-feature
 📌 Projeto com fins educacionais.
 
 👨‍💻 Autor
-<p align="center"> <b>Victor Boehm</b><br> 🚀 Desenvolvedor em formação </p> ```
+<p align="center"> <b>Victor Boehm</b><br> 🚀 Desenvolvedor em formação </p> 
