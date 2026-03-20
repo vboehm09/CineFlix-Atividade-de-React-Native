@@ -21,31 +21,37 @@ export default function CardFilme({ filme }) {
 
 const styles = StyleSheet.create({
     card: {
+        flex: 1,
         backgroundColor: '#1F1F1F',
-        flexDirection: 'column', // Mudou para coluna
-        flex: 1, // Ocupa o espaço da grade
-        margin: 5, // Espaçamento entre os filmes
+        flexDirection: 'column',
+        margin: 8,
         borderRadius: 8,
         overflow: 'hidden',
         alignItems: 'center',
+        elevation: 3,
     },
     foto: {
-        width: '100%', // Ocupa a largura da coluna
-        height: 150, // Altura do pôster
+        width: '100%',
+        height: 150,
     },
     info: {
         padding: 8,
-        alignItems: 'center', // Centraliza o texto
+        alignItems: 'center',
     },
     titulo: {
         color: '#FFF',
-        fontSize: 12, // Título menor para caber na grade
+        fontSize: 12,
         fontWeight: 'bold',
-        textAlign: 'center',
+        textAlign: 'center', 
     },
     ano: {
         color: '#AAA',
         fontSize: 10,
+        textAlign: 'center',
     },
-    // Pode remover o estilo 'genero' se ficar muito apertado
+    genero: {
+        color: '#AAA',
+        fontSize: 10,
+        textAlign: 'center',
+    },
 });
