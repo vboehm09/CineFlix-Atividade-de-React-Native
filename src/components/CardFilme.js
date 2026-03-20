@@ -4,9 +4,12 @@ export default function CardFilme({ filme }) {
     return (
         <TouchableOpacity
             style={styles.card}
-            onPress={() => Alert.alert("Filme", `Você clicou em ${filme.titulo}`)}
-        >
-            <Image source={{ uri: filme.capa }} style={styles.capa} />
+            onPress={() => Alert.alert('Filme', `Você clicou em ${filme.titulo}`)}>
+            <Image
+                source={{ uri: filme.capa }}
+                style={{ width: 100, height: 150 }}
+                resizeMode='cover'
+            />
             <View style={styles.info}>
                 <Text style={styles.titulo}>{filme.titulo}</Text>
                 <Text style={styles.ano}>{filme.ano}</Text>
@@ -19,39 +22,30 @@ export default function CardFilme({ filme }) {
 const styles = StyleSheet.create({
     card: {
         backgroundColor: '#1F1F1F',
-        flexDirection: 'row',
-        marginVertical: 12,
-        marginHorizontal: 16,
+        flexDirection: 'column', // Mudou para coluna
+        flex: 1, // Ocupa o espaço da grade
+        margin: 5, // Espaçamento entre os filmes
         borderRadius: 8,
         overflow: 'hidden',
-        elevation: 3,
-        shadowColor: '#000',
-        shadowOffset: {
-            width: 0,
-            height: 2
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84
+        alignItems: 'center',
     },
-    capa: {
-        width: 100,
-        height: 150,
-        resizeMode: 'cover'
+    foto: {
+        width: '100%', // Ocupa a largura da coluna
+        height: 150, // Altura do pôster
     },
     info: {
-        padding: 16
+        padding: 8,
+        alignItems: 'center', // Centraliza o texto
     },
     titulo: {
-        fontSize: 18,
+        color: '#FFF',
+        fontSize: 12, // Título menor para caber na grade
         fontWeight: 'bold',
-        color: '#FFF'
+        textAlign: 'center',
     },
     ano: {
-        fontSize: 14,
-        color: '#CCC'
+        color: '#AAA',
+        fontSize: 10,
     },
-    genero: {
-        fontSize: 12,
-        color: '#AAA'
-    }
+    // Pode remover o estilo 'genero' se ficar muito apertado
 });
