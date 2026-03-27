@@ -113,5 +113,28 @@ export const DADOS_FILMES = [
         ano: 1980,
         capa: 'https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/95/91/20122128.jpg',
         sinopse: 'Dois primos sobrevivem a um naufrágio e ficam isolados em uma ilha deserta no Pacífico. Sem a supervisão de adultos, eles crescem e precisam aprender a sobreviver sozinhos, enquanto descobrem as transformações de seus corpos e o despertar de um amor inocente em meio à natureza selvagem.'
-    }       
+    },
+    {
+        id: '16',
+        titulo: 'Corra',
+        ano: 2017,
+        capa: 'https://m.media-amazon.com/images/I/61RsJbAFxbS._AC_UF894,1000_QL80_.jpg',
+        sinopse: 'A trama segue Chris, um jovem fotógrafo negro que visita a família de sua namorada branca, Rose, em uma propriedade isolada. O acolhimento excessivo revela-se uma conspiração sinistra para hipnotizar e roubar a autonomia de pessoas negras, transferindo mentes brancas para os corpos das vítimas.'
+    },
+    {
+        id: '17',
+        titulo: 'O Rei Leão',
+        ano: 2019,
+        capa: 'https://m.media-amazon.com/images/S/pv-target-images/c8ef254907b58cc687457ab586135aa2e1d35f6f89cc7fa9b222084c22b6549d.jpg',
+        sinopse: 'Simba, um jovem leão, é forçado a deixar seu reino e enfrentar o destino que lhe foi reservado. Com a ajuda de seus amigos, ele aprende sobre responsabilidade e coragem para assumir seu papel como rei.'
+
+    },
+    {
+        id: '18',
+        titulo: 'Nope',
+        ano: 2022,
+        capa: 'https://play-lh.googleusercontent.com/3BNGyuGqEms7OCgC0YoWjcWTUgeC-yOl74S5lMOEC_fDQ22mlqAotFNkYlcOY9Wf-UMC7JXPRR0vKQ2UsrqK',
+        sinopse: 'Um fazendeiro e seu irmão descobrem um fenômeno misterioso no céu, que desencadeia uma série de eventos sobrenaturais em sua propriedade.'
+
+    }
 ];
